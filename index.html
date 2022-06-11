@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- backtotop-->
+    <span class="backtotop"><i class="fa-solid fa-circle-chevron-up"></i></span>
+
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Blog</li></a>
+                    <a href="#"><li>About</li></a>
+                </ul>
+            </div>
+            <span><i class="fa-brands fa-angular"></i></span>
+            <span class="down"><i class="fa-solid fa-chevron-down"></i></span>
+            <h1>Angular js</h1> 
+        </div>
+    </header>
+
+    <section>
+        <div class="blog">
+            <h2>Angular Nedir ?</h2><br>
+            <p>Angular, Google tarafından geliştirilen ve desteklenen SPA(Single Page Application) uygulama yapılmasına olanak sağlayan javascript kütüphanesidir.
+
+            Angular model view controller yapısına bağlı geliştirme yapabilirsiniz. Eğer .net developersanız ve MVC yapısını kullandıysanız Angular’ a daha kolay hakim olabilirsiniz. Bu konudaki öğrenme süreciniz oldukça hızlı olacaktır.</p>
+            <br>
+            <h2>Tarihçe</h2><br>
+            <p>
+            2009 — Angular’ ın tarihçesine bakıcak olursak Google çalışanı olan Misko Hevery tarafından kişisel geliştirdiği bir kütüphane olarak başlıyor.
+                
+            2010 — Angular ilk kez AngularJS isminde https://angularjs.org internet adresinde yayınlanıyor.
+                
+            2016 — Yazılımcılar tarafından oldukça sevilen Angular 2016 yılında köklü bir değişiklikle geliyor ve geliştirme dili Javascript’ ten TypeScript’ e geçiyor ve eski sürüm olan AngularJS’e destek ve geliştirme durduruluyor. Hatta bu köklü değişiklikten sonra https://angularjs.org olan internet sitesi https://angular.io/ ile değiştiriliyor. Angular artık popüler internet tarayıcılarında ve cross-platfromlar üzerinde çalışabilir hale getiriliyor.</p>
+            <br>
+        </div>
+        <div class="more">
+            <h2>SPA Nedir ?</h2><br>
+            <p> Single Page Applicationlarda yönlendirme işlemi backend tarafından değil client tarafında yapılır. Bir tane index sayfamız oluyor ve client tarafında sayfalar yönlendirme ile değiştiriliyor ve render ediliyor. Bu sayede yeni bir sayfaya geçmiş etkisi veriyor.
+            </p><br>
+            <h2>Neden Angular ?</h2><br>
+            <p>
+                Hızlı bir biçimde SPA uygulama geliştirilebilir.
+                Modüler bir yapıya sahiptir. Uygulamanızı parçalara bölebilirsiniz. Tekrar kullanılabilirlik konusunda oldukça başarılıdır.
+                İhtiyacınız olan bütün paketler Angular içinde mevcut geliyor. Yani siz bir araba yapmak istiyorsanız Angular size arabanın kalıbını motorunu veriyor size sadece bunları birleştirmek kalıyor. Bu özellik Angular’ ı diğer SPA uygulamalardan ayıran en önemli özelliktir.
+            </p>
+        </div>
+    </section>
+    
+    <!--<div class="other">
+        <div><a href="#"><img src="images/react-js-egitimi.png" alt=""></a></div>
+        <div><a href="#"><img src="images/jquery.png" alt=""></a></div>
+        <div><a href="#"><img src="images/0_-DUz6zRd79eI4Ijs.png" alt=""></a></div>
+    </div>-->
+
+
+    <div class="other">
+        <div class="owl-carousel">
+            <div><a href="#"><img src="images/react-js-egitimi.png" alt=""></a></div>
+            <div><a href="#"><img src="images/jquery.png" alt=""></a></div>
+            <div><a href="#"><img src="images/0_-DUz6zRd79eI4Ijs.png" alt=""></a></div>
+            <div><a href="#"><img src="images/images.jpg" alt=""></a></div>
+            <div><a href="#"><img src="images/1_OrjCKmou1jT4It5so5gvOA.jpg" alt=""></a></div>
+        </div>
+    </div>
+   
+    <footer>
+        <div class="footer">
+            <div class="contact">
+                <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-twitter"></i></a></span>
+                <span><a href="#"><i class="fa-brands fa-linkedin"></i></a></span>
+                <span><a href="#"><i class="fa-solid fa-envelope"></i></a></span>
+                <span><a href="#"><i class="fa-solid fa-phone"></i></a></span><br><br>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+        var length = $(document).scrollTop();
+            if (length > 300){
+                $(".backtotop").fadeIn(500);
+            }
+            else{
+                $(".backtotop").fadeOut(500);
+            }
+        });
+        $(".backtotop").click(function() {
+            $("html,body").stop().animate({ scrollTop: "0" }, 1000);
+        });
+        $(".down").click(function() {
+            $("html,body").stop().animate({ scrollTop: "600" }, 1000);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
+</body>
+</html>
